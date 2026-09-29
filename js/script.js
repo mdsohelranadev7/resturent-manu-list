@@ -73,3 +73,11 @@ let sa = nsm.filter((k) => {
     return k > 5
 })
 console.log(sa);
+
+let Wellcome = document.getElementById("Wellcome")
+
+Wellcome.addEventListener("click", () => {
+    let spack = new SpeechSynthesisUtterance("wellcome")
+    speechSynthesis.speak(spack)
+
+})
