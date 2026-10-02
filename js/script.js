@@ -66,7 +66,7 @@ let myfltr = manu.filter((q) => q.spicy + q.price)
 console.table(myfltr);
 
 
-let nsm = [2, 3, 3, 5, , 10, 9, 2,]
+let nsm = [2, 3, 3, 5, 10, 9, 2,]
 
 let sa = nsm.filter((k) => {
 
@@ -79,5 +79,20 @@ let Wellcome = document.getElementById("Wellcome")
 Wellcome.addEventListener("click", () => {
     let spack = new SpeechSynthesisUtterance("hello i'm sohel rana . i learn web devlopment.")
     speechSynthesis.speak(spack)
+
+})
+
+
+let inputs = document.getElementById("inputs")
+let Voice = document.getElementById("Voice")
+
+Voice.addEventListener("click", () => {
+    let input = inputs.value
+
+    let sas = new SpeechSynthesisUtterance(`${input}`)
+
+    speechSynthesis.speak(sas)
+    inputs.value = ""
+    console.log(input);
 
 })
