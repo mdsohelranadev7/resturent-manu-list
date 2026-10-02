@@ -77,7 +77,7 @@ console.log(sa);
 let Wellcome = document.getElementById("Wellcome")
 
 Wellcome.addEventListener("click", () => {
-    let spack = new SpeechSynthesisUtterance("hello i'm sohel rana . i learn web devlopment.")
+    let spack = new SpeechSynthesisUtterance("hello sir , How are you?")
     speechSynthesis.speak(spack)
 
 })
